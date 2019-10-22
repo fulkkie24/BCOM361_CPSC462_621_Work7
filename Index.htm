@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>WORK_07</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('jpg/4.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("jpg./8.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.htm" class="w3-bar-item w3-button " >HOME</a>
+    <a href="pyramid.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Pyramid</a>
+    <a href="https://github.com/fulkkie24/Work_3_Java/blob/master/f02.java?fbclid=IwAR2pJZjnqB5Pf82RcLMbzZu0EE2_TbJSQ5YCCQPY5tQwSYvCEOHcRX2KhZg" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Primitive</a>
+	<a href="https://github.com/fulkkie24/Work_3_Java/blob/master/f001.java?fbclid=IwAR10hf7c50BzLYVU0Y7ydJyaBFjJg5JRJuAGNUTcQ1ihr3sxuZjsvCSnulk" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Argument</a>
+	<a href="https://github.com/fulkkie24/Work_3_Java/blob/master/%E0%B8%97%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%A7_%E0%B9%91%E0%B9%99%E0%B9%91%E0%B9%90%E0%B9%92%E0%B9%91_0005.jpg" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Keyword49</a>
+	<a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_WORK05/blob/master/work005.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> first last max min</a>
+	<a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_Work7/blob/master/Java.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Midterm project</a>
+	<a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_WORK4/blob/master/Work4/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B9%81%E0%B8%81%E0%B8%99.pdf?fbclid=IwAR2FLmXdT6OQufzVvbYGBYZAyqFRds-wmJYnwansjuENlG-bHPzjdUm9BDMt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> 10 Point</a>
+	<a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_Work7/blob/master/JavaIntro.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> JavaIntro</a>
+    
+     
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.htm" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="pyramid.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Pyramid</a>
+    <a href="https://github.com/fulkkie24/Work_3_Java/blob/master/f02.java?fbclid=IwAR2pJZjnqB5Pf82RcLMbzZu0EE2_TbJSQ5YCCQPY5tQwSYvCEOHcRX2KhZg" class="w3-bar-item w3-button" onclick="toggleFunction()">Primitive</a>
+  <a href="https://github.com/fulkkie24/Work_3_Java/blob/master/f001.java?fbclid=IwAR10hf7c50BzLYVU0Y7ydJyaBFjJg5JRJuAGNUTcQ1ihr3sxuZjsvCSnulk" class="w3-bar-item w3-button" onclick="toggleFunction()">Argument</a>
+  <a href="https://github.com/fulkkie24/Work_3_Java/blob/master/%E0%B8%97%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%A7_%E0%B9%91%E0%B9%99%E0%B9%91%E0%B9%90%E0%B9%92%E0%B9%91_0005.jpg" class="w3-bar-item w3-button" onclick="toggleFunction()">Keyword49</a>
+  <a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_WORK05/blob/master/work005.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">first last max min</a>
+  <a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_Work7/blob/master/Java.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">Midterm project</a>
+    <a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_WORK4/blob/master/Work4/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B9%81%E0%B8%81%E0%B8%99.pdf?fbclid=IwAR2FLmXdT6OQufzVvbYGBYZAyqFRds-wmJYnwansjuENlG-bHPzjdUm9BDMt" class="w3-bar-item w3-button" onclick="toggleFunction()">10 Point</a>
+	  <a href="https://github.com/fulkkie24/BCOM361_CPSC462_621_Work7/blob/master/JavaIntro.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">JavaIntro</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> HOMEWORK</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>สวัสดีครับ ผมนายวชิรศักดิ์ ฟลุ๊คเองครับ!!!</em></p>
+  <p>ผมเป็นนิสิต มหาวิทยาลัยเนชั่น ปี 3 ครับ </p> <p>เรียน CS วิทยาการคอมพิวเตอร์</p><p>ผมจะบอกว่านี้อะเป็นเว็บที่ Github.io ที่ผมทำขึ้นมาแบบง่ายๆอ่านไฟล์ผ่าน Index.htm และผมได้ทำงานที่เคยทำมาในวิชา Java Programming การเขียนโปรแกรมภาษาจาวา เป็นการสรุปหรือร่วมงานหรือรวมไฟล์นั้นเองอาจจะไมครบบ้างอะนะ ฮ่าๆ แต่ก็พยายามทำอย่างเต็มที่แล้วล่ะ งานมันเยอะไปหน่อย ฮ่าๆ แต่ก็สู้ไหวนะ สู้พร้อมกับ ขี้เกียจนั้นแหละ แต่มีงานส่งตลอด แน่ๆ คือ ตรงแถบเมนูจะรวมลิ้งค์ที่ อาจารย์ได้กำหนดว่าใส่อะไรบ้างไว้ถ้าไม่ครบ เว็บไซน์ Github.io นี้จะมีการแก้ไข้เรื่อยๆละนะ บ๊ายยยยบายยย</p>
+  
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MY PHOTO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">PHOTO</h3>
+ 
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="jpg/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="jpg/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="jpg/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+  
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i  class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i  class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+  <p>ติดต่อได้ที่ <a href="https://www.facebook.com/Wachirasak.kung" target="_blank" class="w3-hover-text-green">FACEBOOK</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
