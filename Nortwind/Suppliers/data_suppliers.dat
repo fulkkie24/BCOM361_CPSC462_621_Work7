@@ -1,5 +1,4 @@
-#supplierid #companyname #contactname #contacttitle
-1	nationZ	aa1	M
-2	nationZ	ss1	M
-3	nationZ	dd1	M
-4	nationZ	ff1	M
+1,nationS,aa1,S
+2,nationM,ss1,M
+3,nationA,dd1,A
+4,nationC,ff1,C

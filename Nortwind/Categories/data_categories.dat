@@ -1,5 +1,4 @@
-#categoryid #categoryname #description #picture
-1	toy		no	-
-2	sword		no	-
-3	music		no	-
-4	banana		no	-
+1,toy,no,-
+2,sword,no	,-
+3,music,no	,-
+4,banana,no,-
