@@ -1,0 +1,7 @@
+1,pepsi,1,1,20
+2,tea,1,1,20
+3,cookkie,2,2,30
+4,cake,2,2,50
+5,Black Forest Cake,2,2,50
+6,Spong Cake,2,2,50
+7,coffe,1,1,25
